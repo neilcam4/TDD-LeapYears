@@ -19,4 +19,14 @@ describe("LEAP YEARS", function(){
         let result = leapYear(year)
         expect(result).toEqual('No, This is not a Leap Year')
     })
+    it("should return yes if year is divisible by 4 and not 100", function(){
+        let year = 1996;
+        let result = leapYear(year)
+        expect(result).toEqual('No, This is not a Leap Year')
+    })
+    it("should return yes if year is divisible by 4 and not 100", function(){
+        let year = 8;
+        let result = leapYear(year)
+        expect(result).toEqual('No, This is not a Leap Year')
+    })
 })
